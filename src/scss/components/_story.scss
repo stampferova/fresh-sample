@@ -1,0 +1,34 @@
+.story-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__item,
+    &__btn {
+        flex: 0 1 100%;
+        margin-bottom: rem(20, 14);
+
+    }
+
+    @include media('md') {
+        flex-wrap: nowrap;
+        margin-left: -(rem(20));
+
+        &__item,
+        &__btn {
+            flex-basis: auto;
+            margin-bottom: rem(40);
+            padding-left: rem(20);
+        }
+
+        &__item {
+            flex-grow: 1;
+        }
+
+        &__btn {
+            flex-shrink: 0;
+        }
+
+    }
+}

@@ -1,0 +1,37 @@
+.menu__toggle {
+    display: block;
+    position: relative;
+    width: rem(34);
+    height: rem(34);
+    border-radius: 50%;
+    background-color: $light;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        left: rem(7);
+        bottom: rem(15);
+        width: rem(20);
+        height: rem(3);
+        background-color: $brown-medium;
+        box-shadow: 0 -(rem(7)) $brown-medium, 0 rem(7) $brown-medium;
+        transition: transform $t, box-shadow $t;
+    }
+
+    .is-menu-open &::after {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+
+    .is-menu-open &::before {
+        transform: rotate(-45deg);
+        box-shadow: none;
+    }
+
+    @include media('md') {
+        display: none;
+    }
+
+}
+

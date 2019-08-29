@@ -1,0 +1,74 @@
+html {
+    font-size: 87.5%;
+}
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: $brown-medium;
+    font-size: 1rem;
+
+}
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+* {
+    box-sizing: border-box;
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1, .h1 {
+    font-size: rem(30,14);
+    line-height: 1.1;
+}
+
+h2, .h2 {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+h3, .h3 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0 0 1.25rem;
+}
+
+figure {
+    margin: 0 0 rem(20);
+}
+
+@include media('md') {
+    html {
+        font-size: 100%;
+    }
+
+    h1, .h1 {
+        font-size: rem(38);
+    }
+}

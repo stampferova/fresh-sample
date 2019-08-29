@@ -1,0 +1,25 @@
+.breadcrumb {
+    font-size: rem(13);
+    color: black;
+
+    &__item {
+        display: inline-block;
+        padding: rem(20) rem(16);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $muted;
+        position: relative;
+    }
+
+    &__link::after {
+        content: "\003e";
+        color: black;
+        position: absolute;
+        right: -(rem(18));
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}

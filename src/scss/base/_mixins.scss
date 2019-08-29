@@ -1,0 +1,12 @@
+@function rem($target, $sizeValue: 16) {
+    @return ($target / $sizeValue) + rem;
+}
+
+
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+}

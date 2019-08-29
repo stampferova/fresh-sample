@@ -1,0 +1,52 @@
+.text {
+    &--lg {
+        font-size: 2.4rem;
+    }
+
+    &--md {
+        font-size: 1.5rem;
+    }
+
+    &--xs {
+        font-size: 12px;
+    }
+}
+
+.t-brown-medium {
+    color: $brown-medium;
+}
+
+.t-white {
+    color: $white;
+}
+
+.t-light {
+    color: $light;
+}
+
+.t-secondary {
+    color: $secondary;
+}
+
+.t-primary {
+    color: $primary;
+}
+
+.t-bold {
+    font-weight: bold;
+}
+
+.t-center {
+    text-align: center;
+}
+
+
+
+.t-600 {
+    font-weight: 600;
+}
+
+.t-black {
+    font-weight: 900;
+}
+

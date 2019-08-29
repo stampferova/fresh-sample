@@ -1,0 +1,83 @@
+.btn {
+    font-size: rem(16);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: 3px solid transparent;
+    padding: rem(8) rem(10);
+    text-align: center;
+    transition: background $t linear, color $t linear;
+
+    @include media('xs') {
+        padding: rem(12) rem(22);
+
+    }
+
+    // VARIANTS
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    &--primary {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &--secondary {
+        background-color: $brown-medium;
+        color: $white;
+    }
+
+    &--white {
+        background-color: $white;
+        color: $primary;
+    }
+
+    &--outline-secondary {
+        background-color: transparent;
+        border-color: $brown-medium;
+        color: $brown-medium;
+    }
+
+    &--outline-white {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+    }
+
+    &--sm {
+        padding: rem(8) rem(22);
+    }
+
+    // STATES
+    &--primary:hover,
+    &--primary:focus {
+        background: darken( $primary, 10%);
+    }
+
+    &--secondary:hover,
+    &--secondary:focus {
+        background: lighten($brown-medium, 10%);
+    }
+
+    &--white:hover,
+    &--white:focus {
+        background: darken($white, 5%);
+    }
+
+    &--outline-secondary:hover,
+    &--outline-secondary:focus{
+        color: $white;
+        background: $brown-medium;
+    }
+
+    &--outline-white:hover,
+    &--outline-white:focus {
+        color: $primary;
+        background: $white;
+    }
+
+    // QUERIES
+}

@@ -1,0 +1,22 @@
+.img-wrap {
+    @include media('xs') {
+        position: relative;
+        width: 100%;
+        height: rem(155);
+        margin-bottom: rem(25);
+
+        &__content {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+    @include media('lg') {
+        padding-top: 92.6470588235%;
+        height: 0;
+    }
+}

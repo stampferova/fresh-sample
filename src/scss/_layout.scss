@@ -1,0 +1,33 @@
+.d--flex {
+    display: flex;
+}
+
+.justify--between {
+    justify-content: space-between;
+}
+
+
+
+.column--reverse {
+    flex-direction: column-reverse;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.col--50 {
+    flex-basis: 50%;
+}
+
+.col--20 {
+    flex-basis: 20%;
+}
+
+.col--25 {
+    flex-basis: 25%;
+}

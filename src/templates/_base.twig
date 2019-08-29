@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+        <link href="./index.css"  type="text/css" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="d--flex justify--between nav">
+                <a href="./index.html" class="nav__logo-link">
+                    <img alt="logo-fresh-food" class="nav__logo" src="./img/FreshDock_logo.svg" width="116" height="97">
+                </a>
+                <div class="nav__wrap ">
+                    <div class="nav__aside">
+                        <a class="nav__contact" href="tel:+420721060530">
+                            <span class="nav__icon">
+                                <i class="icon icon--phone"></i>
+                            </span>
+                            <span class="hide show-sm">
+                                (+420) 721 060 530
+                            </span>
+
+                        </a>
+                        <a class="nav__contact" href="mailto:info@freshdock.cz">
+                            <span class="nav__icon">
+                                <i class="icon icon--envelope-o"></i>
+                            </span>
+                            <span class="hide show-sm">
+                                info@freshdock.cz
+                            </span>
+                        </a>
+                        <div class="menu__toggle" aria-label="menu" title="menu" data-menu></div>
+                    </div>
+                    <div class="nav__mobile">
+                        <ul class="nav__list d--flex">
+                            <li class="nav__item">
+                                <a class="nav__link is-active" href="./index.html">Přehled služeb</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="./kontakty.html">Kontakty</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="./o-spolecnosti.html">O společnosti</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="./pro-dodavatele.html">Pro dodavatele</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="./pro-odberatele.html">Pro odběratele</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="banner" style="background-image: url({% block banner_image %}//satyr.io/1024x430{% endblock %}); overflow: hidden">
+                <div class="banner__content">
+                    <h1>
+                        {% block banner_heading %}{% endblock %}
+                    </h1>
+                    <p>
+                        {% block banner_text %}{% endblock %}
+                    </p>
+                    <p>
+                        <a class="btn btn--outline-white" href="#">explore your teas</a>
+                    </p>
+
+                </div>
+            </div>
+
+
+            {% block content %}{% endblock %}
+
+            <footer>
+                <div class="footer bg--brown-dark">
+                    <div class="row">
+                        <div class="grid">
+                            <div class="footer__block grid__col grid__col--100 grid__col--50-sm grid__col--auto-lg ">
+                                <h3 class="t-white footer__heading">O společnosti</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">O nás</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="./kariera.html">Kariéra</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__block grid__col grid__col--100 grid__col--50-sm grid__col--auto-lg">
+                                <h3 class="t-white footer__heading">Naše služby</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="./velkoobchod.html">Velkoobchod</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="./maloobchod.html">Maloobchod</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Přeprava</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__block grid__col grid__col--100 grid__col--50-sm grid__col--auto-lg">
+                                <h3 class="t-white footer__heading">Kontakty</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item mb-xs">
+                                        <a class="footer__link" href="tel:+420721050520">Zákaznická linka (8:00 - 22:00)
+                                            <br>(+420) 721 050 520
+                                        </a>
+                                    </li>
+                                    <li class="footer__item mb-xs">
+                                        <a class="footer__link" href="mailto:info@freshdock.cz">Zákaznický e-mail
+                                            <br>
+                                            info@freshdock.cz
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="footer__btn t--light outline--light" href="./kontakty.html">Přehled kontaktů</a>
+                            </div>
+                            <div class="grid__col grid__col--100 grid__col--50-sm grid__col--auto-lg">
+                                <h3 class="t-white footer__heading">
+                                    Sociální sítě
+                                </h3>
+                                <ul class="footer__list grid">
+                                    <li class="footer__item grid__col grid__col--auto ">
+                                        <a class="footer__icon" href="#">
+                                            <i class="icon icon--md icon--facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__item grid__col grid__col--auto">
+                                        <a class="footer__icon" href="#">
+                                            <i class="icon icon--md icon--twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__item grid__col grid__col--auto">
+                                        <a class="footer__icon" href="#">
+                                            <i class="icon icon--md icon--linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__item grid__col grid__col--auto">
+                                        <a class="footer__icon" href="#">
+                                            <i class="icon icon--md icon--instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.hashtag {
+    text-decoration: none;
+    color: $secondary;
+    transition: border $t;
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $secondary;
+    }
+}

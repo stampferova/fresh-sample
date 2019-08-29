@@ -1,0 +1,10 @@
+.hide {
+    display: none;
+}
+@include media('sm'){
+    .show-sm {
+        display: inline-block;
+
+    }
+}
+

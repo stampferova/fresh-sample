@@ -1,0 +1,27 @@
+.contact-us__link {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: rem(3);
+        background: $brown-medium;
+        transform: scaleX(0);
+        transition: transform 0.2s;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &.is-active::after {
+        transform: scaleX(1);
+    }
+}
+
+.contact-us__title {
+    margin-bottom: 0;
+}
+

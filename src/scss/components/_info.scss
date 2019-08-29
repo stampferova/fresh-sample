@@ -1,0 +1,35 @@
+.info {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__text {
+        flex: 0 1 100%;
+        padding: rem(50) rem(50) rem(50) rem(70);
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        flex: 0 1 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: rem(250, 14);
+    }
+
+    @include media('md') {
+        flex-wrap: nowrap;
+
+        &__text,
+        &__img {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        &__img {
+            height: auto;
+        }
+    }
+}

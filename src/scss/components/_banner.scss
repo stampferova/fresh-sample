@@ -1,0 +1,28 @@
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 27rem;
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+
+    &__content {
+        max-width: rem(420);
+        padding: rem(20);
+        background-color: rgba($primary, 0.77);
+        min-height: 27rem;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media('xs') {
+
+        &__content {
+            padding: 2.5rem 2.5rem 2.5rem 4.4rem;
+        }
+    }
+}
+

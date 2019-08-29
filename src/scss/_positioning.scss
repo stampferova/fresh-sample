@@ -1,0 +1,13 @@
+.pos--rel {
+    position: relative;
+}
+
+.positioned-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    @include media('md') {
+        visibility: visible;
+    }
+}

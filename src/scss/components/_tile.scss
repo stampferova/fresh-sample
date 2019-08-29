@@ -1,0 +1,22 @@
+.tile {
+    background-size: cover;
+    color: $white;
+    padding: rem(15);
+    display: flex;
+    height: 100%;
+    line-height: (20/16);
+
+    &__content {
+        flex: 0 1 100%;
+        background-color: rgba($primary, 0.77);
+        padding: rem(25);
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        display: block;
+        font-weight: 900;
+    }
+}

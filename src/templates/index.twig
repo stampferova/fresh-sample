@@ -1,0 +1,145 @@
+{% extends '_base.twig' %}
+
+{% block title %}Přehled služeb
+{% endblock %}
+
+{% block banner_heading %}Podporujeme farmáře a BIO výrobce
+{% endblock %}
+
+{% block banner_text %}
+    Zabýváme se prodejem  a logistikou kvalitních potravin.
+    Spolupracujeme s vybranými farmáři a lokálními výrobci.
+{% endblock %}
+
+{% block banner_image %}./img/cover_HP.jpg{% endblock %}
+
+{% block content %}
+
+
+    <main>
+        <div class="mt-n4">
+            <div class="grid grid--center">
+                <div class="grid__col grid__col--50-sm">
+                    <div class="card card--bg" style="background-image: url('./img/bg/leaf.svg')">
+                        <h2 class="h1 card__title">Jste provozovna nebo obchod?</h1>
+                        <p class="card__text">Přihlašte se do velkoobchodu Fresh Dock a získejte přístup ke stovkám dodavatelům.
+                        </p>
+                        <p>
+                            <a class="btn btn--outline-secondary" href="#">explore your teas</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--50-sm">
+                    <div class="card card--bg" style="background-image: url('./img/bg/stamp.png'); background-size: 130px">
+                        <h2 class="h1 card__title">Jste zákazník a chcete kvalitu?</h2>
+                        <p class="card__text">Navštivte web Z farmy domů a objednejte si kvalitní farmářské produkty s garancí původu.
+                        </p>
+                        <p>
+                            <a class="btn btn--outline-secondary" href="#">explore your teas</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid">
+                <div class="grid__col grid__col--50-sm">
+                    <div class="mb-md">
+                        <h2 class="h1">Potřebujete zajistit přepravu čerstvých potravin?</h2>
+                        <p>Zajišťujeme komplexní logistiku po celé ČR, včetně skladu.</p>
+                        <a class="btn btn--outline-secondary" href="#">explore your teas</a>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--100 grid__col--50-md t-center">
+                    <img alt="car" class="mb-md img img--full" src="./img/bg/cady.jpg" width="530" height="278">
+                </div>
+            </div>
+        </div>
+        {% include 'components/__map.twig' with {'spacing': 'mb-md'} %}
+
+
+        <section class="row" role="region">
+            <h2 class="mb-xxs">Víte, že&hellip;</h2>
+            <div class="grid">
+                <article class="grid__col grid__col--50-sm">
+                    <div class="mb-lg">
+                        <p>
+                            Vyrobené produkty svážíme hned po jejich výrobě? Zaručujeme tím maximální čerstvost. Naší filozofií je co nejkratší doba na cestách, aby byl výrobek u zákazníka ideálně den, nebo dva po výrobě. Snižujeme tím zbytečné vyhazovaní a zákazníkům tímto krokem nabízíme to nejčerstvější zboží, které lze na trhu najít.</p>
+                        <p class="t-secondary">
+                            #dplusnula #neplytvejme
+                        </p>
+                    </div>
+                </article>
+                <article class="grid__col grid__col--50-sm ">
+                    <div class="mb-lg">
+                        <ul class="list mb-xs">
+                            <li class="list__item">Denně vozíme čerstvé zboží z celé ČR</li>
+                            <li class="list__item">Klademe důraz na bezpečnost zboží</li>
+                            <li class="list__item">Zboží doručíme i zákazníkům domů</li>
+                            <li class="list__item">Pravidelně udržujeme vozový park</li>
+                            <li class="list__item">Máme moderní systém, který hlídá vše</li>
+                        </ul>
+                        <p>
+                            <a class="btn btn--lg btn--secondary btn--block" href="#">Těšíme se na váš kontakt</a>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section role="region" class="mb-lg">
+            <div class="grid grid--x-0">
+                <div class="grid__col grid__col--50-sm grid__col--25-lg" style="background-image: url("./img/tile2.jpg")>
+                    <article role="article" class="tile" style="background-image: url(./img/tile1.jpg)">
+                        <div class="tile__content">
+                            <p>
+                                <strong class="tile__label">Klademe důraz na co nejdelší expiraci</strong>
+                                Výrobky doručujeme co nejdříve po jejich výrobě, doručujeme tak to nejčerstvější zboží a snižujeme jejich zbytečné vyhazování.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="grid__col grid__col--50-sm grid__col--25-lg">
+                    <article role="article" class="tile"style="background-image: url(./img/tile3.jpg)">
+                        <div class="tile__content">
+                            <p>
+                                <strong class="tile__label">Respektujeme trh a jeho ceny</strong>
+                                Výrobky doručujeme co nejdříve po jejich výrobě, doručujeme tak to nejčerstvější zboží a snižujeme jejich zbytečné vyhazování.
+                            </p>
+                        </div>
+                    <article>
+                </div>
+                <div class="grid__col grid__col--50-sm grid__col--25-lg">
+                    <article role="article" class="tile" style="background-image: url(./img/tile2.jpg)">
+                        <div class="tile__content">
+                            <p>
+                                <strong class="tile__label">Nabízíme vybraný sortiment</strong>
+                                Výrobky doručujeme co nejdříve po jejich výrobě, doručujeme tak to nejčerstvější zboží a snižujeme jejich zbytečné vyhazování.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="grid__col grid__col--50-sm grid__col--25-lg">
+                    <article role="article" class="tile" style="background-image: url(./img/tile4.jpg)">
+                        <div class="tile__content">
+                            <p>
+                                <strong class="tile__label">Blalala</strong>
+                                Výrobky doručujeme co nejdříve po jejich výrobě, doručujeme tak to nejčerstvější zboží a snižujeme jejich zbytečné vyhazování.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="grid grid--x-0">
+                <p class="grid__col grid__col--100 grid__col--50-sm grid__col--25-lg mb-0">
+                    <a class="btn btn--primary btn--block" href="#">více o nás</a>
+                </p>
+            </div>
+        </section>
+
+
+        {% include 'components/__contact-us.twig' %}
+    </main>
+
+
+{% endblock %}
